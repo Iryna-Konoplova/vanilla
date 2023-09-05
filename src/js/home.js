@@ -9,6 +9,7 @@ getAllCategoriesBookTopList();
 export function getAllCategoriesBookTopList() {
   try {
     book.getTopBooks().then(resp => {
+      console.log(resp)
       renderTitleForTopCategories();
       renderMarkupForTopCategories(resp);
     });
