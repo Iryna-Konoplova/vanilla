@@ -6,9 +6,9 @@ const categoryDivWraper = document.querySelector('.category-wrapper');
 
 getAllCategoriesBookTopList();
 
-export function getAllCategoriesBookTopList() {
+export async function getAllCategoriesBookTopList() {
   try {
-    book.getTopBooks().then(resp => {
+   await book.getTopBooks().then(resp => {
       console.log(resp)
       renderTitleForTopCategories();
       renderMarkupForTopCategories(resp);
