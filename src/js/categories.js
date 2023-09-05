@@ -21,6 +21,7 @@ function markupColumn() {
   book
     .getCategoryList()
     .then(data => {
+      console.log(data)
       const markupCategoriesColumn = data
         .map(({ list_name }) => {
           return `<li class="categories-list" id=${list_name}><a class="category-link" href="#">${list_name}</a></li>`;

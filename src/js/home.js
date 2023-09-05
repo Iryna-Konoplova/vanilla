@@ -8,6 +8,7 @@ getAllCategoriesBookTopList();
 
 export async function getAllCategoriesBookTopList() {
   try {
+    console.log
    await book.getTopBooks().then(resp => {
       console.log(resp)
       renderTitleForTopCategories();
